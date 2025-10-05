@@ -47,9 +47,7 @@ import jakarta.annotation.PostConstruct;
 
 public class MainView extends AppLayout {
 
-	@Autowired
 	private AccessAnnotationChecker accessChecker;
-	@Autowired
 	private AuthenticationContext authenticationContext;
 	private final ConfirmDialog confirmDialog = new ConfirmDialog();
 	private Tabs menu;
@@ -170,7 +168,7 @@ public class MainView extends AppLayout {
                     .getHeader("Accept-Language");
             String locales = "available: " + LocaleUtil.getI18NProvider().get()
                     .getProvidedLocales().stream().map(l -> l.toString())
-                    .collect(Collectors.joining(",")); 
+                    .collect(Collectors.joining(","));
             String locale = "selected: " + getLocale().toString();
 
             VerticalLayout versions = new VerticalLayout(new Div(version), new Div(header),
@@ -193,4 +191,24 @@ public class MainView extends AppLayout {
         }
 
 	private static Tab createTab(VaadinIcon icon, String title, Class<? extends Component> viewClass) {
-		return
+		return createTab(populateLink(new RouterLink("", viewClass), icon, title));
+	}
+
+	private static Tab createTab(Component content) {
+		final Tab tab = new Tab();
+		tab.addThemeVariants(TabVariant.LUMO_ICON_ON_TOP);
+		tab.add(content);
+		return tab;
+	}
+
+	private static Anchor createLogoutLink(String contextPath) {
+		final Anchor a = populateLink(new Anchor(), VaadinIcon.ARROW_RIGHT, translate("logout"));
+		return a;
+	}
+
+	private static <T extends HasComponents> T populateLink(T a, VaadinIcon icon, String title) {
+		a.add(icon.create());
+		a.add(title);
+		return a;
+	}
+}
