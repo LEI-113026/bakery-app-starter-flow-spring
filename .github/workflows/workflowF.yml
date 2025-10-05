@@ -1,0 +1,22 @@
+name: Notificar responsável pelo PR
+
+on:
+  pull_request:
+    types: [opened, reopened, synchronize]
+
+jobs:
+  notify:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Adicionar comentário na Pull Request
+        uses: peter-evans/create-or-update-comment@v3
+        with:
+          token: ${{ secrets.GITHUB_TOKEN }}
+          issue-number: ${{ github.event.pull_request.number }}
+          body: |
+            👋 Olá @${{ github.event.pull_request.user.login }}!
+            
+            O teu Pull Request foi recebido ✅  
+            A equipa será notificada para revisão.
+
+            _Mensagem automática via GitHub Actions_
