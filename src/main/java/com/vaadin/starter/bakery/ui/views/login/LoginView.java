@@ -12,6 +12,9 @@ import com.vaadin.flow.router.Route;
 import com.vaadin.starter.bakery.app.security.SecurityUtils;
 import com.vaadin.starter.bakery.ui.views.storefront.StorefrontView;
 
+/**
+ * View for logging in. Shown inside a LoginOverlay component.
+ */
 @Route
 @PageTitle("###Bakery###")
 public class LoginView extends LoginOverlay

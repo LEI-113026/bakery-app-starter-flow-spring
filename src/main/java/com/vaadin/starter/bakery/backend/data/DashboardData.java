@@ -5,6 +5,9 @@ import java.util.List;
 
 import com.vaadin.starter.bakery.backend.data.entity.Product;
 
+/**
+ * Dashboard data container.
+ */
 public class DashboardData {
 
 	private DeliveryStats deliveryStats;

@@ -1,3 +1,6 @@
+/**
+ * Entity representing a pickup location for orders.
+ */
 package com.vaadin.starter.bakery.backend.data.entity;
 
 import jakarta.persistence.Column;

@@ -1,3 +1,6 @@
+/**
+ * Event fired when a delete action is triggered on a component.
+ */
 package com.vaadin.starter.bakery.ui.events;
 
 import com.vaadin.flow.component.Component;

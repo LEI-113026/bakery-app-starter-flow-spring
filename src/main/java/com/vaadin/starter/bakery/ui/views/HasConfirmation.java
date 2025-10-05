@@ -1,3 +1,6 @@
+/**
+ * Interface for views that support confirmation dialogs.
+ */
 package com.vaadin.starter.bakery.ui.views;
 
 import com.vaadin.flow.component.confirmdialog.ConfirmDialog;

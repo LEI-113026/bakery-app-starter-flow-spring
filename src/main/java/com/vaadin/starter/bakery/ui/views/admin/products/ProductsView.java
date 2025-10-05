@@ -23,7 +23,10 @@ import com.vaadin.starter.bakery.ui.utils.BakeryConst;
 import com.vaadin.starter.bakery.ui.utils.converters.CurrencyFormatter;
 
 import jakarta.annotation.security.RolesAllowed;
-
+/**
+ * A view for performing CRUD operations on products. The view is only
+ * accessible to users with the ADMIN role.
+ */
 @Route(value = BakeryConst.PAGE_PRODUCTS, layout = MainView.class)
 @PageTitle(BakeryConst.TITLE_PRODUCTS)
 @RolesAllowed(Role.ADMIN)

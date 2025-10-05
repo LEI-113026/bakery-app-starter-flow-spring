@@ -1,3 +1,7 @@
+/**
+ * Entry point for the Bakery application.
+ * Configures Spring Boot and Vaadin integration.
+ */
 package com.vaadin.starter.bakery;
 
 import org.springframework.boot.SpringApplication;
@@ -15,7 +19,7 @@ import com.vaadin.starter.bakery.backend.service.UserService;
 import com.vaadin.starter.bakery.ui.MainView;
 
 /**
- * Spring boot web application initializer.
+ * The main application class that starts the Spring Boot application.
  */
 @SpringBootApplication(scanBasePackageClasses = { SecurityConfiguration.class, MainView.class, Application.class,
 		UserService.class }, exclude = ErrorMvcAutoConfiguration.class)

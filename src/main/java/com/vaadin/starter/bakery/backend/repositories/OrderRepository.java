@@ -16,6 +16,9 @@ import com.vaadin.starter.bakery.backend.data.OrderState;
 import com.vaadin.starter.bakery.backend.data.entity.Order;
 import com.vaadin.starter.bakery.backend.data.entity.OrderSummary;
 
+/**
+ * Repository interface for managing Order entities.
+ */
 public interface OrderRepository extends JpaRepository<Order, Long> {
 
 	@EntityGraph(value = Order.ENTITY_GRAPTH_BRIEF, type = EntityGraphType.LOAD)

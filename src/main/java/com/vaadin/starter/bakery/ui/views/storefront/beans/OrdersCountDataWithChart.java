@@ -1,5 +1,8 @@
 package com.vaadin.starter.bakery.ui.views.storefront.beans;
 
+/**
+ * Data class representing order count data with an overall count for charting purposes.
+ */
 public class OrdersCountDataWithChart extends OrdersCountData {
 
 	private Integer overall;

@@ -6,6 +6,9 @@ import org.springframework.data.jpa.repository.JpaRepository;
 
 import com.vaadin.starter.bakery.backend.data.entity.PickupLocation;
 
+/**
+ * Repository interface for managing PickupLocation entities.
+ */
 public interface PickupLocationRepository extends JpaRepository<PickupLocation, Long> {
 
 	Page<PickupLocation> findByNameLikeIgnoreCase(String nameFilter, Pageable pageable);

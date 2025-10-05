@@ -1,5 +1,8 @@
 import { html, css, LitElement } from 'lit';
 
+/**
+ * `dashboard-counter-label` is a dashboard component showing a large number with a title and subtitle.
+ */
 class DashboardCounterLabel extends LitElement {
   static get styles() {
     return css`

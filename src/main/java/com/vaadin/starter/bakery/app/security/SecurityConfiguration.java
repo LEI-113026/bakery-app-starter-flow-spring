@@ -27,6 +27,13 @@ import com.vaadin.starter.bakery.ui.views.login.LoginView;
 @Profile("!control-center")
 public class SecurityConfiguration extends VaadinWebSecurity {
 
+	/**
+	 * Exposes the currently logged in user as a bean.
+	 *
+	 * @param userRepository the user repository
+	 * @return the current user bean
+	 */
+
 	@Bean
 	@Scope(ConfigurableBeanFactory.SCOPE_PROTOTYPE)
 	public CurrentUser currentUser(UserRepository userRepository) {

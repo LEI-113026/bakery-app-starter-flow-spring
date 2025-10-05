@@ -1,5 +1,5 @@
 /**
- *
+ * Factory for creating entity presenters for CRUD views.
  */
 package com.vaadin.starter.bakery.ui.crud;
 

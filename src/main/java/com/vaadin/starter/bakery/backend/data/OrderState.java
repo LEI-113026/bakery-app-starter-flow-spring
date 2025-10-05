@@ -1,5 +1,8 @@
 package com.vaadin.starter.bakery.backend.data;
 
+/**
+ * Enumeration representing the various states an order can be in.
+ */
 import java.util.Locale;
 
 import com.vaadin.flow.shared.util.SharedUtil;

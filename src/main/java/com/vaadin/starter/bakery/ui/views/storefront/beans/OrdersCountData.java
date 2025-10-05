@@ -1,5 +1,8 @@
 package com.vaadin.starter.bakery.ui.views.storefront.beans;
 
+/**
+ * A simple data class to hold order count information for display purposes.
+ */
 public class OrdersCountData {
 
 	private String title;

@@ -29,6 +29,9 @@ import com.vaadin.starter.bakery.ui.views.storefront.events.DeleteEvent;
 import com.vaadin.starter.bakery.ui.views.storefront.events.PriceChangeEvent;
 import com.vaadin.starter.bakery.ui.views.storefront.events.ProductChangeEvent;
 
+/**
+ * Order item editor component for editing individual order items within an order.
+ */
 @Tag("order-item-editor")
 @JsModule("./src/views/orderedit/order-item-editor.js")
 public class OrderItemEditor extends LitTemplate implements HasValueAndElement<ComponentValueChangeEvent<OrderItemEditor,OrderItem>, OrderItem> {

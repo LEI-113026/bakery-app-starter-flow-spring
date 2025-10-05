@@ -13,6 +13,10 @@ import com.vaadin.starter.bakery.backend.data.entity.OrderSummary;
 import com.vaadin.starter.bakery.ui.views.storefront.beans.OrdersCountData;
 import com.vaadin.starter.bakery.ui.views.storefront.beans.OrdersCountDataWithChart;
 
+/**
+ * Utility class for dashboard-related operations.
+ */
+
 public class DashboardUtils {
 
 

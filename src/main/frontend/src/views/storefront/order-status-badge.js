@@ -2,6 +2,9 @@ import { html, css, LitElement } from 'lit';
 import '@vaadin/icon';
 import '@vaadin/icons';
 
+/**
+ * `order-status-badge` is a component for displaying order status with a colored badge.
+ */
 class OrderStatusBadge extends LitElement {
   static get styles() {
     return css`

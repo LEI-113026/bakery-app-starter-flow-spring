@@ -1,6 +1,9 @@
 package com.vaadin.starter.bakery.ui.views.storefront.converters;
 
 import java.io.Serializable;
+/**
+ * A simple data class representing a date in the storefront.
+ */
 
 public class StorefrontDate implements Serializable {
 	private String day;

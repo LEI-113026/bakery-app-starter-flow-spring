@@ -17,6 +17,13 @@ import com.vaadin.starter.bakery.backend.data.entity.User;
 @Profile("control-center")
 public class SecurityConfigurationCC {
 
+    /**
+     * Exposes the currently logged in user as a bean.
+     *
+     * @param authCtx the authentication context
+     * @return the current user bean
+     */
+
     @Bean
     @Scope(ConfigurableBeanFactory.SCOPE_PROTOTYPE)
     CurrentUser currentUser(AuthenticationContext authCtx) {

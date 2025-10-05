@@ -1,5 +1,8 @@
 package com.vaadin.starter.bakery.ui.utils.messages;
 
+/**
+ * Centralized error messages for CRUD operations.
+ */
 public final class CrudErrorMessage {
 	public static final String ENTITY_NOT_FOUND = "The selected entity was not found.";
 

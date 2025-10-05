@@ -2,6 +2,9 @@ package com.vaadin.starter.bakery.ui.views.storefront.events;
 
 import com.vaadin.flow.component.ComponentEvent;
 import com.vaadin.starter.bakery.ui.views.orderedit.OrderItemsEditor;
+/**
+ * Event representing a change in the total price of order items.
+ */
 
 public class TotalPriceChangeEvent extends ComponentEvent<OrderItemsEditor> {
 

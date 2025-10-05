@@ -1,3 +1,6 @@
+/**
+ * Handles CRUD operations and interactions between the view and service for entities.
+ */
 package com.vaadin.starter.bakery.ui.crud;
 
 import java.util.function.UnaryOperator;
@@ -190,7 +193,7 @@ public class EntityPresenter<T extends AbstractEntity, V extends EntityView<T>>
 }
 
 /**
- * Holds variables that change.
+ * Holds variables that change during entity presentation.
  */
 class EntityPresenterState<T extends AbstractEntity> {
 

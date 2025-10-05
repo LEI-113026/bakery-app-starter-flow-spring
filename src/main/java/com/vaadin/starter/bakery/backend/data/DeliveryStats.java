@@ -1,5 +1,8 @@
 package com.vaadin.starter.bakery.backend.data;
 
+/**
+ * Delivery statistics data model.
+ */
 public class DeliveryStats {
 
 	private int deliveredToday;

@@ -3,6 +3,9 @@ package com.vaadin.starter.bakery.ui.views.storefront.events;
 import com.vaadin.flow.component.ComponentEvent;
 import com.vaadin.starter.bakery.ui.views.orderedit.OrderDetails;
 
+/**
+ * Event representing a comment action in the OrderDetails component.
+ */
 public class CommentEvent extends ComponentEvent<OrderDetails> {
 
 	private Long orderId;

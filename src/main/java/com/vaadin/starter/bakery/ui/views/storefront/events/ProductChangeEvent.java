@@ -4,6 +4,10 @@ import com.vaadin.flow.component.ComponentEvent;
 import com.vaadin.starter.bakery.backend.data.entity.Product;
 import com.vaadin.starter.bakery.ui.views.orderedit.OrderItemEditor;
 
+/**
+ * Event fired when the selected product in the {@link OrderItemEditor} has
+ * changed.
+ */
 public class ProductChangeEvent extends ComponentEvent<OrderItemEditor> {
 
 	private final Product product;

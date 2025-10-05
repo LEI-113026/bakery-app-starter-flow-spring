@@ -11,6 +11,11 @@ import com.vaadin.starter.bakery.ui.views.storefront.beans.OrdersCountData;
 
 @Tag("dashboard-counter-label")
 @JsModule("./src/views/dashboard/dashboard-counter-label.js")
+
+/**
+ * A template for displaying a counter with a title and subtitle in the dashboard.
+ */
+
 public class DashboardCounterLabel extends LitTemplate {
 
 	@Id("title")

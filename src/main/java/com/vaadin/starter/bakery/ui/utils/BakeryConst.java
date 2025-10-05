@@ -3,7 +3,9 @@ package com.vaadin.starter.bakery.ui.utils;
 import java.util.Locale;
 
 import org.springframework.data.domain.Sort;
-
+/**
+ * Centralized application constants.
+ */
 public class BakeryConst {
 
 	public static final Locale APP_LOCALE = Locale.US;

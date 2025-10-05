@@ -1,3 +1,6 @@
+/**
+ * Generates headers for order cards to visually group orders by date.
+ */
 package com.vaadin.starter.bakery.ui.views.storefront;
 
 import java.time.LocalDate;

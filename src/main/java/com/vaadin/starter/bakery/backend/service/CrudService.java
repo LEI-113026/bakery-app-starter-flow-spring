@@ -1,3 +1,6 @@
+/**
+ * Generic CRUD service interface for entities.
+ */
 package com.vaadin.starter.bakery.backend.service;
 
 import jakarta.persistence.EntityNotFoundException;

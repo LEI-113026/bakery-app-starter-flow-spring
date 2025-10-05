@@ -3,6 +3,10 @@ import { map } from 'lit/directives/map.js';
 import './order-status-badge.js';
 import { sharedStyles } from '../../../styles/shared-styles.js';
 
+/**
+ * `order-card` is a component for displaying order summary information in a card format.
+ * */
+
 class OrderCard extends LitElement {
   static get styles() {
     return [

@@ -5,6 +5,9 @@ import '@vaadin/icon';
 import '@vaadin/icons';
 import '@vaadin/text-field';
 
+/**
+ * `search-bar` is a search field with optional checkbox and action button.
+ */
 class SearchBar extends LitElement {
   static get styles() {
     return css`

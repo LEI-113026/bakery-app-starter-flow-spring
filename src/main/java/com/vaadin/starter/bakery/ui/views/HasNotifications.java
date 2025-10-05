@@ -1,3 +1,6 @@
+/**
+ * Interface for views that can show notifications to users.
+ */
 package com.vaadin.starter.bakery.ui.views;
 
 import com.vaadin.flow.component.HasElement;

@@ -1,3 +1,6 @@
+/**
+ * Data provider for paginated and filtered orders in the grid.
+ */
 package com.vaadin.starter.bakery.ui.dataproviders;
 
 import java.io.Serializable;
@@ -29,6 +32,9 @@ import com.vaadin.starter.bakery.ui.utils.BakeryConst;
 public class OrdersGridDataProvider extends FilterablePageableDataProvider<Order, OrdersGridDataProvider.OrderFilter> {
 
 	public static class OrderFilter implements Serializable {
+		/**
+		 * Filter for searching and showing previous orders.
+		 */
 		private String filter;
 		private boolean showPrevious;
 

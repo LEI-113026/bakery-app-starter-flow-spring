@@ -11,6 +11,9 @@ import com.vaadin.flow.data.binder.ValueContext;
 import com.vaadin.flow.data.converter.Converter;
 import com.vaadin.starter.bakery.ui.utils.FormattingUtils;
 
+/**
+ * Converter for formatting Integer values as currency strings.
+ */
 class PriceConverter implements Converter<String, Integer> {
 
 	private final DecimalFormat df = FormattingUtils.getUiPriceFormatter();

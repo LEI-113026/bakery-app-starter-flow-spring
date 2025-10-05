@@ -1,5 +1,8 @@
 package com.vaadin.starter.bakery.ui.views.storefront.beans;
 
+/**
+ * A simple data class representing the header information for an order card.
+ */
 public class OrderCardHeader {
 
 	private String main;

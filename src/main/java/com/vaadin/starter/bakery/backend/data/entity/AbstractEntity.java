@@ -7,6 +7,9 @@ import jakarta.persistence.GeneratedValue;
 import jakarta.persistence.Id;
 import jakarta.persistence.MappedSuperclass;
 import jakarta.persistence.Version;
+/**
+ * Abstract base class for entities providing common fields like id and version.
+ */
 
 @MappedSuperclass
 public abstract class AbstractEntity implements Serializable {
@@ -26,10 +29,18 @@ public abstract class AbstractEntity implements Serializable {
 		return version;
 	}
 
+	/** (non-Javadoc)
+	 * @see java.lang.Object#hashCode()
+	 */
+
 	@Override
 	public int hashCode() {
 		return Objects.hash(id, version);
 	}
+
+	/** (non-Javadoc)
+	 * @see java.lang.Object#equals(java.lang.Object)
+	 */
 
 	@Override
 	public boolean equals(Object o) {

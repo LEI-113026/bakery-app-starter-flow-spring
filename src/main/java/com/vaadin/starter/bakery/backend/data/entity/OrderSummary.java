@@ -1,3 +1,6 @@
+/**
+ * Projection interface for summarizing order details.
+ */
 package com.vaadin.starter.bakery.backend.data.entity;
 
 import java.time.LocalDate;

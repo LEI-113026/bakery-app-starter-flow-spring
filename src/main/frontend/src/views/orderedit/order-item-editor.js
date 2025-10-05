@@ -8,6 +8,9 @@ import '@vaadin/integer-field';
 import '@vaadin/text-field';
 import { sharedStyles } from '../../../styles/shared-styles.js';
 
+/**
+ * `order-item-editor` is a component for editing a single order item.
+ */
 class OrderItemEditor extends LitElement {
   static get styles() {
     return [

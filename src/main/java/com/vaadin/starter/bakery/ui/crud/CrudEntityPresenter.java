@@ -1,3 +1,6 @@
+/**
+ * Presenter for handling CRUD operations and error notifications for entities.
+ */
 package com.vaadin.starter.bakery.ui.crud;
 
 import com.vaadin.starter.bakery.app.HasLogger;

@@ -1,3 +1,6 @@
+/**
+ * Search bar component with filter and action button for CRUD views.
+ */
 package com.vaadin.starter.bakery.ui.components;
 
 import com.vaadin.flow.component.ClickEvent;

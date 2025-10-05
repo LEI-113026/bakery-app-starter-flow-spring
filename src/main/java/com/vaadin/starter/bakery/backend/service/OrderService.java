@@ -1,3 +1,6 @@
+/**
+ * Service for managing Order entities and related business logic.
+ */
 package com.vaadin.starter.bakery.backend.service;
 
 import java.time.LocalDate;

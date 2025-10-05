@@ -5,6 +5,9 @@ import '../../components/search-bar.js';
 import './order-card.js';
 import { sharedStyles } from '../../../styles/shared-styles.js';
 
+/**
+ * `storefront-view` is the main view of the Bakery app.
+ */
 class StorefrontView extends LitElement {
   static get styles() {
     return [

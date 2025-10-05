@@ -1,3 +1,6 @@
+/**
+ * Storefront view for displaying and managing orders.
+ */
 package com.vaadin.starter.bakery.ui.views.storefront;
 
 import java.util.List;

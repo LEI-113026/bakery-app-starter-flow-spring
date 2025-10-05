@@ -1,3 +1,6 @@
+/**
+ * Service for managing User entities and related business logic.
+ */
 package com.vaadin.starter.bakery.backend.service;
 
 import java.util.Optional;

@@ -10,6 +10,9 @@ import java.time.format.TextStyle;
 import java.time.temporal.TemporalField;
 import java.time.temporal.WeekFields;
 
+/**
+ * Utility class for various formatting tasks.
+ */
 public class FormattingUtils {
 
 	public static final String DECIMAL_ZERO = "0.00";

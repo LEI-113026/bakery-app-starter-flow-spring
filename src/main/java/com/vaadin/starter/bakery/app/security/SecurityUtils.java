@@ -13,6 +13,9 @@ import org.springframework.security.core.userdetails.UserDetails;
  */
 public final class SecurityUtils {
 
+	/**
+	 * Util methods only
+	 */
 	private SecurityUtils() {
 		// Util methods only
 	}

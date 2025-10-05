@@ -28,6 +28,12 @@ public class UserDetailsServiceImpl implements UserDetailsService {
 
 	private final UserRepository userRepository;
 
+	/**
+	 * Constructs the service with the required dependencies.
+	 *
+	 * @param userRepository the user repository
+	 */
+
 	@Autowired
 	public UserDetailsServiceImpl(UserRepository userRepository) {
 		this.userRepository = userRepository;

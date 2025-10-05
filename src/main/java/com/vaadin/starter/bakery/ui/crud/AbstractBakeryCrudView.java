@@ -1,3 +1,6 @@
+/**
+ * Abstract base view for CRUD operations in the Bakery app.
+ */
 package com.vaadin.starter.bakery.ui.crud;
 
 import java.util.function.Consumer;

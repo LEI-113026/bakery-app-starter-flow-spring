@@ -1,3 +1,6 @@
+/**
+ * Defines user roles for access control in the Bakery application.
+ */
 package com.vaadin.starter.bakery.backend.data;
 
 public class Role {

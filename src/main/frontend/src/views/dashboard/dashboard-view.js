@@ -7,6 +7,9 @@ import '../storefront/order-card.js';
 import './dashboard-counter-label.js';
 import { sharedStyles } from '../../../styles/shared-styles.js';
 
+/**
+ * `dashboard-view` is the main view of the Bakery app.
+ */
 class DashboardView extends LitElement {
   static get styles() {
     return [

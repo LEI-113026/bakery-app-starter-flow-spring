@@ -1,6 +1,8 @@
 import { css } from "lit";
 
-// shared styles for all LitTemplate based views
+/**
+ * Shared styles for all views and components.
+ */
 export const sharedStyles = css`
   *,
   *::before,

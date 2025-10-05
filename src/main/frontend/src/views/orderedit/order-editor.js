@@ -13,6 +13,9 @@ import { ScrollShadowMixin } from '../../components/utils-mixin.js';
 import './order-item-editor.js';
 import { sharedStyles } from '../../../styles/shared-styles.js';
 
+/**
+ * `order-editor` is a component for creating and editing orders.
+ */
 class OrderEditor extends ScrollShadowMixin(LitElement) {
   static get styles() {
     return [

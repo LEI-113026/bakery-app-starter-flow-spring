@@ -15,6 +15,9 @@ import com.vaadin.flow.router.RouterLink;
 import com.vaadin.starter.bakery.ui.MainView;
 import com.vaadin.starter.bakery.ui.utils.BakeryConst;
 
+/**
+ * Custom 404 (Not Found) error page.
+ */
 @ParentLayout(MainView.class)
 @PageTitle(BakeryConst.TITLE_NOT_FOUND)
 public class CustomRouteNotFoundError extends RouteNotFoundError {

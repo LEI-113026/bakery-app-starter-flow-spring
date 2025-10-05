@@ -1,3 +1,6 @@
+/**
+ * Configures the application shell, theme, and PWA settings.
+ */
 package com.vaadin.starter.bakery.ui;
 
 import com.vaadin.flow.component.page.AppShellConfigurator;

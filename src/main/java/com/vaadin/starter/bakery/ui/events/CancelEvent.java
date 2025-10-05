@@ -1,3 +1,6 @@
+/**
+ * Event fired when a cancel action is triggered on a component.
+ */
 package com.vaadin.starter.bakery.ui.events;
 
 import com.vaadin.flow.component.Component;

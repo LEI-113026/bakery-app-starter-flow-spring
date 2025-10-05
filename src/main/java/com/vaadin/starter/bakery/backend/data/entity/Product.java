@@ -1,3 +1,6 @@
+/**
+ * Entity representing a product in the Bakery application.
+ */
 package com.vaadin.starter.bakery.backend.data.entity;
 
 import jakarta.persistence.Column;

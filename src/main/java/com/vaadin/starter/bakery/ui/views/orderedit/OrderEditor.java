@@ -49,6 +49,13 @@ import com.vaadin.starter.bakery.ui.utils.converters.LocalTimeConverter;
 import com.vaadin.starter.bakery.ui.views.storefront.events.ReviewEvent;
 import com.vaadin.starter.bakery.ui.views.storefront.events.ValueChangeEvent;
 
+/**
+ * A form for editing orders.
+ * <p>
+ * The order editor is implemented as a LitTemplate, see
+ * {@code order-editor.js} for the template.
+ * </p>
+ */
 @Tag("order-editor")
 @JsModule("./src/views/orderedit/order-editor.js")
 @SpringComponent

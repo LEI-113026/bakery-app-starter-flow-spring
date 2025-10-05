@@ -1,3 +1,6 @@
+/**
+ * Utility methods for data provider conversions and label generation.
+ */
 package com.vaadin.starter.bakery.ui.dataproviders;
 
 import java.util.function.Function;

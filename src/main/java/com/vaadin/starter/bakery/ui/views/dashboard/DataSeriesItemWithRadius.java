@@ -2,6 +2,11 @@ package com.vaadin.starter.bakery.ui.views.dashboard;
 
 import com.vaadin.flow.component.charts.model.DataSeriesItem;
 
+/**
+ * A DataSeriesItem with additional radius and innerRadius properties for
+ * pie/donut charts.
+ */
+
 public class DataSeriesItemWithRadius extends DataSeriesItem {
 
 	private String radius;

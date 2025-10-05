@@ -1,5 +1,8 @@
 import { html, css, LitElement } from 'lit';
 
+/**
+ * `buttons-bar` is a horizontal container for buttons and additional information.
+ */
 class ButtonsBarElement extends LitElement {
   static get styles() {
     return css`

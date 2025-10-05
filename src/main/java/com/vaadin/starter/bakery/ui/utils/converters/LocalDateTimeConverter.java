@@ -5,6 +5,9 @@ import static com.vaadin.starter.bakery.ui.utils.FormattingUtils.FULL_DATE_FORMA
 
 import java.time.LocalDateTime;
 
+/**
+ * Converter for formatting LocalDateTime values as strings.
+ */
 public class LocalDateTimeConverter {
 	private static final LocalTimeConverter TIME_FORMATTER = new LocalTimeConverter();
 

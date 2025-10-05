@@ -18,6 +18,13 @@ import com.vaadin.starter.bakery.backend.data.entity.OrderItem;
 import com.vaadin.starter.bakery.backend.data.entity.Product;
 import com.vaadin.starter.bakery.ui.views.storefront.events.TotalPriceChangeEvent;
 
+/**
+ * A component for editing a list of order items.
+ * <p>
+ * The component always contains an empty item editor at the end of the list to
+ * allow adding new items. When a product is selected in the empty editor, a new
+ * empty editor is added below it.
+ */
 public class OrderItemsEditor extends Div implements HasValueAndElement<ComponentValueChangeEvent<OrderItemsEditor,List<OrderItem>>, List<OrderItem>> {
 
 	private OrderItemEditor empty;

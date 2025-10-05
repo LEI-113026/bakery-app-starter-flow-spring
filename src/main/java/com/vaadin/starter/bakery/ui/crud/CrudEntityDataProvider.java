@@ -1,3 +1,6 @@
+/**
+ * Data provider for CRUD entities supporting filtering and sorting.
+ */
 package com.vaadin.starter.bakery.ui.crud;
 
 import java.util.List;
@@ -44,4 +47,3 @@ public class CrudEntityDataProvider<T extends AbstractEntity> extends Filterable
 	}
 
 }
-

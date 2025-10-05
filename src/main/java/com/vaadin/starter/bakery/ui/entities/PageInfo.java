@@ -1,3 +1,6 @@
+/**
+ * Holds information about a navigation page, including link, icon, and title.
+ */
 package com.vaadin.starter.bakery.ui.entities;
 
 public class PageInfo {

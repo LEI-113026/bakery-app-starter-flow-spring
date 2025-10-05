@@ -27,6 +27,10 @@ import org.hibernate.annotations.BatchSize;
 
 import com.vaadin.starter.bakery.backend.data.OrderState;
 
+/**
+ * Order entity representing a customer's order in the bakery system.
+ */
+
 @Entity(name = "OrderInfo") // "Order" is a reserved word
 @NamedEntityGraphs({@NamedEntityGraph(name = Order.ENTITY_GRAPTH_BRIEF, attributeNodes = {
 		@NamedAttributeNode("customer"),
@@ -73,6 +77,14 @@ public class Order extends AbstractEntity implements OrderSummary {
 	@JoinColumn
 	private List<HistoryItem> history;
 
+	/**
+	 * Constructs a new Order with the specified creator.
+	 * The order is initialized with a NEW state, an empty customer, and an initial
+	 * history item indicating that the order was placed.
+	 *
+	 * @param createdBy the user who created the order
+	 */
+
 	public Order(User createdBy) {
 		this.state = OrderState.NEW;
 		setCustomer(new Customer());
@@ -84,6 +96,15 @@ public class Order extends AbstractEntity implements OrderSummary {
 		// Empty constructor is needed by Spring Data / JPA
 	}
 
+	/**
+	 * Adds a history item to the order's history.
+	 * The history item records the user who created it, a comment, and the current
+	 * state of the order.
+	 *
+	 * @param createdBy the user who created the history item
+	 * @param comment   the comment describing the history item
+	 */
+
 	public void addHistoryItem(User createdBy, String comment) {
 		HistoryItem item = new HistoryItem(createdBy, comment);
 		item.setNewState(state);
@@ -93,10 +114,25 @@ public class Order extends AbstractEntity implements OrderSummary {
 		history.add(item);
 	}
 
+	/**
+	 * Adds a history item to the order's history with a specified new state.
+	 * The history item records the user who created it, a comment, and the new
+	 * state of the order.
+	 *
+	 * @param createdBy the user who created the history item
+	 * @param comment   the comment describing the history item
+	 * @param newState  the new state associated with the history item
+	 */
+
 	@Override
 	public LocalDate getDueDate() {
 		return dueDate;
 	}
+
+	/** Sets the due date of the order.
+	 *
+	 * @param dueDate the due date to set
+	 */
 
 	public void setDueDate(LocalDate dueDate) {
 		this.dueDate = dueDate;
@@ -107,19 +143,32 @@ public class Order extends AbstractEntity implements OrderSummary {
 		return dueTime;
 	}
 
+	/** Sets the dueTime of the order
+	 *
+	 * @param dueTime
+	 */
 	public void setDueTime(LocalTime dueTime) {
 		this.dueTime = dueTime;
 	}
 
+	/** Gets the Pickup Location of an Order
+	 *
+	 * @return
+	 */
 	@Override
 	public PickupLocation getPickupLocation() {
 		return pickupLocation;
 	}
 
+	/** Sets the Pickup Location of the Order
+	 *
+	 * @param pickupLocation
+	 */
 	public void setPickupLocation(PickupLocation pickupLocation) {
 		this.pickupLocation = pickupLocation;
 	}
 
+	
 	@Override
 	public Customer getCustomer() {
 		return customer;

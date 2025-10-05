@@ -6,6 +6,9 @@ import org.springframework.data.jpa.repository.JpaRepository;
 
 import com.vaadin.starter.bakery.backend.data.entity.User;
 
+/**
+ * Repository interface for managing User entities.
+ */
 public interface UserRepository extends JpaRepository<User, Long> {
 
 	User findByEmailIgnoreCase(String email);

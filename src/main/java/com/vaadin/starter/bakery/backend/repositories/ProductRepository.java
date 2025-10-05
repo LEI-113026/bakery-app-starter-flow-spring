@@ -6,6 +6,9 @@ import org.springframework.data.jpa.repository.JpaRepository;
 
 import com.vaadin.starter.bakery.backend.data.entity.Product;
 
+/**
+ * Repository interface for managing Product entities.
+ */
 public interface ProductRepository extends JpaRepository<Product, Long> {
 
 	Page<Product> findBy(Pageable page);

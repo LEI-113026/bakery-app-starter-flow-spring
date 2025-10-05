@@ -52,6 +52,18 @@ import com.vaadin.starter.bakery.ui.views.storefront.beans.OrdersCountDataWithCh
 @Route(value = BakeryConst.PAGE_DASHBOARD, layout = MainView.class)
 @PageTitle(BakeryConst.TITLE_DASHBOARD)
 @PermitAll
+
+/**
+ * Dashboard view shows an overview of the bakery orders.
+ * <p>
+ * The view is composed of a number of charts and summary cards on the top of
+ * the page and a grid listing the orders due today. The charts are implemented
+ * using the Vaadin Charts add-on.
+ * <p>
+ * The view uses a Lit template for its layout which is served from
+ * frontend/src/views/dashboard/dashboard-view.js
+ */
+
 public class DashboardView extends LitTemplate {
 
 	private static final String[] MONTH_LABELS = new String[] {"Jan", "Feb", "Mar", "Apr", "May", "Jun", "Jul",

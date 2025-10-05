@@ -27,6 +27,9 @@ import com.vaadin.starter.bakery.ui.MainView;
 import com.vaadin.starter.bakery.ui.crud.AbstractBakeryCrudView;
 import com.vaadin.starter.bakery.ui.utils.BakeryConst;
 
+/**
+ * View for administration of users. Accessible by ADMIN users.
+ */
 @Route(value = BakeryConst.PAGE_USERS, layout = MainView.class)
 @PageTitle(BakeryConst.TITLE_USERS)
 @RolesAllowed(Role.ADMIN)

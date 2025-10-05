@@ -1,6 +1,8 @@
 /**
- * Adds the scroll-shadow attribute if there is a `#main` element with scrollsize
- * larger than its height, and there is hidden content at the bottom.
+ * A mixin to add scroll shadow effect to a component with a scrollable main area.
+ * @param subclass
+ * @returns {{readonly properties: {noScroll: {type: Boolean | BooleanConstructor, reflect: boolean, attribute: string}, _main: {attribute: boolean}}, new(): {_contentScroll(): void, firstUpdated(): void}, prototype: {_contentScroll(): void, firstUpdated(): void}}}
+ * @constructor
  */
 export const ScrollShadowMixin = (subclass) =>
   class extends subclass {

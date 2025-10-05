@@ -1,3 +1,6 @@
+/**
+ * Handles business logic and user interactions for the StorefrontView.
+ */
 package com.vaadin.starter.bakery.ui.views.storefront;
 
 import java.util.List;
@@ -69,82 +72,4 @@ public class OrderPresenter {
 	}
 
 	void onNavigation(Long id, boolean edit) {
-		entityPresenter.loadEntity(id, e -> open(e, edit));
-	}
-
-	void createNewOrder() {
-		open(entityPresenter.createNew(), true);
-	}
-
-	void cancel() {
-            entityPresenter.cancel(this::close, () -> view.setOpened(true));
-	}
-
-	void closeSilently() {
-		entityPresenter.close();
-		view.setOpened(false);
-	}
-
-	void edit() {
-        UI.getCurrent()
-                .navigate(String.format(PAGE_STOREFRONT_ORDER_EDIT,
-                        entityPresenter.getEntity().getId()));
-	}
-
-	void back() {
-		view.setDialogElementsVisibility(true);
-	}
-
-	void review() {
-		// Using collect instead of findFirst to assure all streams are
-		// traversed, and every validation updates its view
-		List<HasValue<?, ?>> fields = view.validate().collect(Collectors.toList());
-		if (fields.isEmpty()) {
-			if (entityPresenter.writeEntity()) {
-				view.setDialogElementsVisibility(false);
-				view.getOpenedOrderDetails().display(entityPresenter.getEntity(), true);
-			}
-		} else if (fields.get(0) instanceof Focusable) {
-			((Focusable<?>) fields.get(0)).focus();
-		}
-	}
-
-	void save() {
-		entityPresenter.save(e -> {
-			if (entityPresenter.isNew()) {
-				view.showCreatedNotification();
-				dataProvider.refreshAll();
-			} else {
-				view.showUpdatedNotification();
-				dataProvider.refreshItem(e);
-			}
-			close();
-		});
-
-	}
-
-	void addComment(String comment) {
-		if (entityPresenter.executeUpdate(e -> orderService.addComment(currentUser.getUser(), e, comment))) {
-			// You can only add comments when in view mode, so reopening in that state.
-			open(entityPresenter.getEntity(), false);
-		}
-	}
-
-	private void open(Order order, boolean edit) {
-		view.setDialogElementsVisibility(edit);
-		view.setOpened(true);
-
-		if (edit) {
-			view.getOpenedOrderEditor().read(order, entityPresenter.isNew());
-		} else {
-			view.getOpenedOrderDetails().display(order, false);
-		}
-	}
-
-	private void close() {
-		view.getOpenedOrderEditor().close();
-		view.setOpened(false);
-		view.navigateToMainView();
-		entityPresenter.close();
-	}
-}
+		entityPresenter.loadEntity(id, e -> open

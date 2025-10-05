@@ -1,3 +1,6 @@
+/**
+ * Entity representing an item in an order.
+ */
 package com.vaadin.starter.bakery.backend.data.entity;
 
 import jakarta.persistence.Entity;

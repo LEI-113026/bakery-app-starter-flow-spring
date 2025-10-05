@@ -1,5 +1,8 @@
 package com.vaadin.starter.bakery.ui.utils.messages;
 
+/**
+ * A class representing a message with a caption, OK text, cancel text, and message body.
+ */
 public class Message {
 
 	public static final String CONFIRM_CAPTION_DELETE = "Confirm Delete";

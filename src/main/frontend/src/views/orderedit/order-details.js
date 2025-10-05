@@ -13,6 +13,9 @@ import { ScrollShadowMixin } from '../../components/utils-mixin.js';
 import '../storefront/order-status-badge.js';
 import { sharedStyles } from '../../../styles/shared-styles.js';
 
+/**
+ * `order-details` is a component for viewing and editing order details.
+ **/
 class OrderDetails extends ScrollShadowMixin(LitElement) {
   static get styles() {
     return [

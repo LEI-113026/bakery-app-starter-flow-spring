@@ -1,3 +1,6 @@
+/**
+ * CRUD service interface with filtering support.
+ */
 package com.vaadin.starter.bakery.backend.service;
 
 import java.util.Optional;
